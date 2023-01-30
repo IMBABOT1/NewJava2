@@ -18,10 +18,11 @@ public class Cat implements Participants {
             if (maxDistance >= distance) {
                 System.out.println("cat run success");
                 return true;
+            }else {
+                isActive = false;
+                System.out.println("cat out of distance");
+                return isActive;
             }
-            isActive = false;
-            System.out.println("cat out of distance");
-            return isActive;
         }else {
             System.out.println("Cat not active");
             return false;
@@ -34,10 +35,11 @@ public class Cat implements Participants {
             if (maxHeight >= height) {
                 System.out.println("cat jump success");
                 return true;
+            }else {
+                isActive = false;
+                System.out.println("cat out of distance");
+                return isActive;
             }
-            isActive = false;
-            System.out.println("cat out of distance");
-            return isActive;
         }else {
             System.out.println("Cat not active");
             return false;

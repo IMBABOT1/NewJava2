@@ -19,11 +19,12 @@ public class Robot implements Participants {
             if (maxDistance >= distance) {
                 System.out.println("robot run success");
                 return true;
+            } else {
+                isActive = false;
+                System.out.println("robot out of distance");
+                return isActive;
             }
-            isActive = false;
-            System.out.println("robot out of distance");
-            return isActive;
-        }else {
+        } else {
             System.out.println("robot not active");
             return false;
         }
@@ -35,11 +36,12 @@ public class Robot implements Participants {
             if (maxHeight >= height) {
                 System.out.println("robot jump success");
                 return true;
+            } else {
+                isActive = false;
+                System.out.println("robot out of distance");
+                return isActive;
             }
-            isActive = false;
-            System.out.println("robot out of distance");
-            return isActive;
-        }else {
+        } else {
             System.out.println("robot not active");
             return false;
         }

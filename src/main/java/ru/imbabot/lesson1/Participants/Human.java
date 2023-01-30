@@ -18,10 +18,11 @@ public class Human implements Participants {
             if (maxDistance >= distance) {
                 System.out.println("human run success");
                 return true;
+            }else {
+                isActive = false;
+                System.out.println("human out of distance");
+                return isActive;
             }
-            isActive = false;
-            System.out.println("human out of distance");
-            return isActive;
         }else {
             System.out.println("human not active");
             return false;
@@ -34,10 +35,11 @@ public class Human implements Participants {
             if (maxHeight >= height) {
                 System.out.println("human jump success");
                 return true;
+            }else {
+                isActive = false;
+                System.out.println("human out of distance");
+                return isActive;
             }
-            isActive = false;
-            System.out.println("human out of distance");
-            return isActive;
         }else {
             System.out.println("human not active");
             return false;
