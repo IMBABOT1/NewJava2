@@ -35,7 +35,6 @@ public class Main {
         }
         arr[1][2] = "s";
 
-        System.out.println(Arrays.deepToString(arr));
 
         try {
             System.out.println(method(arr));
